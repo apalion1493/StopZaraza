@@ -1,0 +1,18 @@
+.price-page-second-section {
+  padding-top: 24px;
+  padding-bottom: 134px;
+
+  h1 {
+    margin-bottom: 65px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .price-page-second-section h1 {
+    margin-bottom: 26px;
+  }
+
+  .price-page-second-section {
+    padding-bottom: 50px;
+  }
+}

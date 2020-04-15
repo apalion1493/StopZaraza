@@ -1,0 +1,54 @@
+.service-cost_container {
+  padding-top: 10px;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+}
+
+.service-cost__footer {
+  background: rgba(180, 87, 84, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 10px;
+  margin-top: 22px;
+}
+
+.service-cost__footer-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $font-family-first;
+  text-align: center;
+  color: #741E1F;
+}
+
+@media (max-width: 1199.98px) {
+  .service-cost__second-table {
+    thead {
+      display: none;
+    }
+
+    tr {
+      height: 63px;
+      border: 1px solid #E0E0E0;
+
+      &:nth-child(odd) {
+        background: rgba(233, 233, 231, .7);
+      }
+
+      &:nth-child(even) {
+        background: initial !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-cost__footer-text {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+  }
+}

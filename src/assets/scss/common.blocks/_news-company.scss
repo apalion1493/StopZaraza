@@ -1,0 +1,24 @@
+.news-company_container {
+  padding-top: 65px;
+
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &.block-hidden {
+    .news-company__block-hide {
+      display: flex;
+    }
+  }
+}
+
+.news-company__btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.news-company__block-hide {
+  display: none;
+}

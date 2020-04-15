@@ -1,0 +1,940 @@
+$active-color: #b45754;
+
+html, body {
+  height: 100%;
+  font-family: $font-family-first;
+}
+
+body {
+  & > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+
+    & > .content {
+      flex: 1;
+      width: calc(100% - 250px);
+      max-width: 1920px;
+      margin-right: auto;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}
+
+.left-container {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 250px;
+  position: relative;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+.container {
+  max-width: 1500px;
+  margin-left: 0;
+}
+
+.section {
+  max-width: 1500px;
+}
+
+.icon-cable {
+  background: url("../img/cable-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 61px;
+  height: 61px;
+  display: block;
+}
+
+.icon-cord {
+  background: url("../img/cord-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 51px;
+  height: 51px;
+  display: block;
+}
+
+.icon-gauge {
+  background: url("../img/gauge-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+.icon-valve {
+  background: url("../img/valve-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 59px;
+  height: 59px;
+  display: block;
+}
+
+.icon-sewage {
+  background: url("../img/sewage-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 57px;
+  height: 57px;
+  display: block;
+}
+
+.icon-heating-networks {
+  background: url("../img/heating-networks-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 61px;
+  height: 32px;
+  display: block;
+}
+
+.circle-brown {
+  border: 2px solid #741E1F;
+  border-radius: 50%;
+  display: inline-flex;
+}
+
+.circle-brown-wrapper {
+  min-width: 50px;
+  width: 50px;
+  display: inline-flex;
+  justify-content: center;
+  margin-right: 28px;
+  margin-left: 10px;
+}
+
+.circle-brown-1 {
+  min-width: 5px;
+  height: 5px;
+}
+
+.circle-brown-2 {
+  min-width: 8px;
+  height: 8px;
+}
+
+.circle-brown-3 {
+  min-width: 11px;
+  height: 11px;
+}
+
+.circle-brown-4 {
+  min-width: 15px;
+  height: 15px;
+}
+
+.circle-brown-5 {
+  min-width: 20px;
+  height: 20px;
+}
+
+.circle-brown-6 {
+  min-width: 25px;
+  height: 25px;
+}
+
+.circle-brown-7 {
+  min-width: 31px;
+  height: 31px;
+}
+
+.circle-brown-8 {
+  min-width: 35px;
+  height: 35px;
+}
+
+.circle-brown-9 {
+  min-width: 40px;
+  height: 40px;
+}
+
+.circle-brown-10 {
+  min-width: 50px;
+  height: 50px;
+}
+
+.left-arrow-red {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background: url("../img/red-icon-arrow.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 20px;
+    height: 20px;
+    display: block;
+    left: -30px;
+    top: 6px;
+  }
+}
+
+.underpasses-icon {
+  background: url("../img/underpasses-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.scenery-icon {
+  background: url("../img/scenery-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.security-icon {
+  background: url("../img/security-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.time-reduction-icon {
+  background: url("../img/time-reduction-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.weather-icon {
+  background: url("../img/weather-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.no-risk-icon {
+  background: url("../img/no-risk-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.landscape-icon {
+  background: url("../img/landscape-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.calendar-icon {
+  background: url("../img/calendar-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.under-way-icon {
+  background: url("../img/under-way-icon.png") no-repeat center;
+  background-size: 100% auto;
+}
+
+.under-water-icon {
+  background: url("../img/under-water-icon.png") no-repeat center;
+  background-size: 100% auto;
+}
+
+.under-railway-icon {
+  background: url("../img/under-railway-icon.png") no-repeat center;
+  background-size: 100% auto;
+}
+
+.under-building-icon {
+  background: url("../img/under-building-icon.png") no-repeat center;
+  background-size: 100% auto;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31px;
+}
+
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-43%, -3px);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.owl-prev {
+  &:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  span {
+    background: url("../img/carousel-btn.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    display: block;
+  }
+}
+
+.owl-next {
+  &:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  span {
+    background: url("../img/carousel-btn.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 35px;
+    min-width: 35px;
+    height: 35px;
+    display: block;
+    transform: rotate(180deg);
+  }
+}
+
+.owl-dot {
+  width: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  &:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+
+  span {
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid #B35654;
+    display: block;
+  }
+}
+
+.owl-dot.active {
+  span {
+    background: #B35654;
+  }
+}
+
+.icon-youtube {
+  background: url("../img/youtube-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.icon-vk {
+  background: url("../img/vk-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.icon-viber {
+  background: url("../img/viber-iocn.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.icon-wp {
+  background: url("../img/wp-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.icon-telegram {
+  background: url("../img/telegram-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.award-icon {
+  background: url("../img/award-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.kremlin-icon {
+  background: url("../img/kremlin-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 52px;
+  height: 52px;
+  display: block;
+}
+
+.shopping-list-icon {
+  background: url("../img/shopping-list-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.blueprint-red-icon {
+  background: url("../img/blueprint-red-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.plan-red-icon {
+  background: url("../img/plan-red-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.pipes-red-icon {
+  background: url("../img/pipes-red-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+.destination-icon {
+  background: url("../img/destination-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+
+.drilling-rig-icon {
+  background: url("../img/drilling-rig-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 60px;
+  height: 46px;
+  display: block;
+}
+
+.theodolite-icon {
+  background: url("../img/theodolite-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 57px;
+  height: 57px;
+  display: block;
+}
+
+.worker-icon {
+  background: url("../img/worker-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 49px;
+  height: 53px;
+  display: block;
+}
+
+.foundation-pit-icon {
+  background: url("../img/foundation-pit-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 55px;
+  height: 35px;
+  display: block;
+}
+
+.builder-icon {
+  background: url("../img/builder-icon.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
+.mail-icon {
+  background: url("../img/mail-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.call-icon {
+  background: url("../img/call-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.pipes-icon {
+  background: url("../img/pipes-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 56px;
+  height: 35px;
+  display: block;
+}
+
+.cement-icon {
+  background: url("../img/cement-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.engineer-icon {
+  background: url("../img/engineer-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.terrain-icon {
+  background: url("../img/terrain-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 49px;
+  height: 49px;
+  display: block;
+}
+
+.well-icon {
+  background: url("../img/well-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 47px;
+  height: 47px;
+  display: block;
+}
+
+.spring-icon {
+  background: url("../img/spring-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 41px;
+  height: 40px;
+  display: block;
+}
+
+.red-border-container {
+  background: #FFFFFF;
+  border: 1px solid $active-color;
+  padding: 35px 46px 35px 28px;
+}
+
+.color-text {
+  color: $active-color;
+}
+
+.marker-icon {
+  background: url("../img/marker-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 20px;
+  display: block;
+}
+
+.metro-icon {
+  background: url("../img/metro-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 15px;
+  display: block;
+}
+
+.tel-icon {
+  background: url("../img/tel-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 15px;
+  height: 15px;
+  display: block;
+}
+
+.mail-icon-red {
+  background: url("../img/mail-icon-red.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 18px;
+  height: 14px;
+  display: block;
+}
+
+.modal-content-dvn {
+  .modal-header {
+    min-height: 51px;
+    background: linear-gradient(270deg, #3F80CD 0%, #3843A9 100%);
+  }
+
+  .modal-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  .close {
+    opacity: 1;
+
+    span {
+      font-size: 0;
+      background: url("../img/close-icon.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
+  }
+
+  .modal-body {
+    padding: 20px 24px 30px;
+
+    img {
+
+    }
+  }
+}
+
+.red-num-block {
+  background: #B45754;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: $font-family-second;
+  color: #FFFFFF;
+}
+
+.range-icon {
+  background: url("../img/bureshnekovogo-burenia/bureshnekovogo-burenia-icon-1.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 63px;
+  height: 61px;
+  display: block;
+}
+
+.length-icon {
+  background: url("../img/bureshnekovogo-burenia/bureshnekovogo-burenia-icon-2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 63px;
+  height: 45px;
+  display: block;
+}
+
+.pit-size {
+  background: url("../img/upravliaemyi-prokol/upravliaemyi-prokol-icon-2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 64px;
+  height: 29px;
+  display: block;
+}
+
+.pit-depth {
+  background: url("../img/upravliaemyi-prokol/upravliaemyi-prokol-icon-3.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 64px;
+  height: 29px;
+  display: block;
+}
+
+.warning-icon {
+  background: url("../img/warning-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.diameter-icon {
+  background: url("../img/diameter-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 63px;
+  height: 61px;
+  display: block;
+}
+
+.highlight-text {
+  background: #FBF685;
+}
+
+.gauge-icon {
+  background: url("../img/beztronsheinaia-procladka-trub/gauge-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 56px;
+  height: 56px;
+  display: block;
+}
+
+.cord-icon {
+  background: url("../img/beztronsheinaia-procladka-trub/cord-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 51px;
+  height: 51px;
+  display: block;
+}
+
+.valve-icon {
+  background: url("../img/beztronsheinaia-procladka-trub/valve-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 59px;
+  height: 59px;
+  display: block;
+}
+
+.sewage-icon {
+  background: url("../img/beztronsheinaia-procladka-trub/sewage-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 57px;
+  height: 57px;
+  display: block;
+}
+
+.clock-icon {
+  background: url("../img/grundoram/clock-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.target-icon {
+  background: url("../img/grundoram/target-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.without-electricity-icon {
+  background: url("../img/grundoram/without-electricity-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 36px;
+  height: 46px;
+  display: block;
+}
+
+.cones-icon {
+  background: url("../img/grundoram/cones-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+
+.without-wall-icon {
+  background: url("../img/grundoram/without-wall-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 43px;
+  height: 43px;
+  display: block;
+}
+
+////////////////////////////////////////////////////////////////////
+
+#slider {
+  max-width: 1920px;
+  height: 516px;
+  overflow: hidden;
+}
+
+.slider-content {
+  height: 516px;
+  width: 10000px;
+  font-weight: 300;
+}
+
+.slider-item {
+  position: relative;
+  height: 516px;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0) skew(-8deg, 0deg);
+  transition: all 0.5s;
+  border-left: 4px solid #ffffff !important;
+}
+
+.slider-item:first-child {
+  margin-left: -45px;
+}
+
+.image {
+  float: left;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.item-img-1 {
+  height: 516px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: -45px;
+  background-position: right !important;
+  background-size: cover !important;
+  transform: translate3d(0, 0, 0) skew(8deg, 0deg);
+  transition: all 0.5s;
+}
+
+.item-text {
+  position: absolute;
+}
+
+#wrapper {
+  width: calc(100% - 250px);
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-left: auto;
+}
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 1300px) {
+  .item-img-1-01 {
+    width: 865px;
+  }
+
+  .item-img-1-02 {
+    width: 820px;
+  }
+
+  .item-img-1-03 {
+    width: 870px;
+  }
+
+  .item-img-1-04 {
+    width: 675px;
+  }
+
+  .item-img-1 {
+    left: -30px;
+  }
+}
+
+@media (max-width:700px) {
+
+  .item-img-1,  {
+    height: 450px;
+  }
+}
+
+
+////////////////////
+
+@media (max-width: 1300px)  {
+  .item-img-1 {
+    width: 613px;
+  }
+}
+
+@media (max-width: 1199.98px)  {
+  .owl-nav {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .app>.wrapper>.content {
+    width: calc(100% - 50px);
+  }
+
+  .app.active>.wrapper>.content {
+    width: calc(100% - 50px);
+    margin-left: 51px;
+  }
+
+  .left-container {
+    flex-basis: 50px;
+  }
+
+  #sidebar {
+    width: 51px;
+  }
+
+  #wrapper {
+    width: calc(100% - 51px);
+  }
+}
+
+@media (max-width: 767.98px)  {
+  .slider-item:first-child {
+    margin-left: 0;
+  }
+
+  #slider,
+  .slider-content,
+  .slider-item,
+  .item-img-1 {
+    height: 400px;
+  }
+
+  .item-img-1 {
+    width: 100%;
+    left: 0;
+  }
+
+  .slider-item,
+  .item-img-1 {
+    transform: none;
+  }
+
+  .slider-item {
+    border-left: 2px solid #ffffff !important;
+  }
+
+  .communication-types__block-container {
+    justify-content: center;
+  }
+
+  .icon-cable {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon-cord {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon-gauge {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-valve {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-sewage {
+    width: 36px;
+    height: 36px;
+  }
+
+  .icon-heating-networks {
+    width: 36px;
+    height: 19px;
+  }
+
+  .circle-brown-wrapper {
+    display: none;
+  }
+
+  .red-border-container {
+    padding: 15px;
+  }
+}
+
