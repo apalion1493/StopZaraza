@@ -1,0 +1,29 @@
+.seventh-screen {
+  padding-top: 87px;
+  padding-bottom: 77px;
+  overflow: hidden;
+}
+
+.seventh-screen__title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .seventh-screen {
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+
+  .seventh-screen__title {
+    margin-bottom: 37px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .seventh-screen {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}

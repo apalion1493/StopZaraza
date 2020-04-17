@@ -1,0 +1,118 @@
+.main-footer {
+  padding-top: 40px;
+  padding-bottom: 38px;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__logo {
+  margin-right: 80px;
+  display: flex;
+  align-items: center;
+
+  i {
+    background: url("../img/bottle-3.png") no-repeat center;
+    background-size: 100% auto;
+    width: 24px;
+    height: 70px;
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.main-footer__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 0;
+  max-width: 315px;
+}
+
+.main-footer__num {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    background: #008BEF;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .main-footer {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .main-footer__text {
+    display: none;
+  }
+
+  .main-footer__logo {
+    margin-right: 0;
+  }
+
+  //.main-footer__num a {
+  //  font-size: 32px;
+  //}
+}
+
+@media (max-width: 767.98px) {
+  .main-footer__wrapper {
+    display: none;
+  }
+
+  .main-footer__num a {
+    position: relative;
+    padding-left: 35px;
+
+    &:before {
+      content: '';
+      background: url("../img/icon/phone.svg") no-repeat center;
+      background-size: 100% auto;
+      width: 22px;
+      height: 22px;
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  .main-footer__num {
+    max-width: 272px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  }
+}

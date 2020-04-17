@@ -16,6 +16,8 @@
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
+  border-radius: 10px;
+  box-shadow: 0 3px 0 #1A7FC8;
 
   @include hover {
     color: $body-color;

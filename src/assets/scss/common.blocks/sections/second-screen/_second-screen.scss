@@ -1,0 +1,166 @@
+.second-screen {
+  padding-top: 47px;
+  padding-bottom: 106px;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+  }
+}
+
+.second-screen__title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.second-screen__contentBlock {
+  margin-top: 163px;
+}
+
+.second-screen__contentBlock-title {
+  font-weight: bold;
+  margin-bottom: 40px;
+  letter-spacing: -0.2px;
+}
+
+.second-screen__row {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -220px;
+    top: -40px;
+    background: url("../img/bottle-3.png") no-repeat center;
+    background-size: 100% auto;
+    width: 137px;
+    height: 390px;
+    z-index: 1;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -220px;
+    top: -70px;
+    background: url("../img/bottle-4.png") no-repeat center;
+    background-size: 100% auto;
+    width: 150px;
+    height: 430px;
+    z-index: 1;
+  }
+}
+
+.second-screen__icon-plus {
+  position: absolute;
+}
+
+.second-screen__icon-plus-1 {
+  top: 120px;
+  left: -280px;
+}
+
+.second-screen__icon-plus-2 {
+  top: 300px;
+  left: -100px;
+}
+
+.second-screen__icon-plus-3 {
+  left: -270px;
+  top: 450px;
+}
+
+.second-screen__icon-plus-4 {
+  right: -65px;
+  top: 320px;
+}
+
+.second-screen__icon-plus-5 {
+  top: 130px;
+  right: -280px;
+}
+
+.second-screen__icon-plus-6 {
+  right: -260px;
+  top: 450px;
+}
+
+.second-screen__img-arms {
+  position: absolute;
+  bottom: -410px;
+  right: -480px;
+}
+
+.second-screen-img-mob {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .second-screen__icon-plus {
+    display: none;
+  }
+
+  .second-screen__row:after,
+  .second-screen__row:before {
+    display: none;
+  }
+
+  .second-screen__img-arms {
+    bottom: -110px;
+    right: -121px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .second-screen__contentBlock {
+    margin-top: 50px;
+  }
+
+  .second-screen__img-arms {
+    width: 370px;
+    bottom: -60px;
+    right: -136px;
+  }
+
+  .second-screen__contentBlock-title {
+    margin-bottom: 23px;
+  }
+
+  .second-screen {
+    padding-top: 28px;
+    padding-bottom: 52px;
+  }
+
+  .second-screen__title {
+    margin-bottom: 44px;
+    max-width: 404px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .second-screen-img-mob {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second-screen__contentBlock-title {
+    text-align: center;
+  }
+
+  .second-screen__contentBlock {
+    margin-bottom: 300px;
+  }
+
+  .second-screen__img-arms {
+    right: 0;
+  }
+}

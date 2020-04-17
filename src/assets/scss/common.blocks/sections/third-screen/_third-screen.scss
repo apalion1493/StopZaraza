@@ -1,0 +1,42 @@
+.third-screen {
+  padding-top: 70px;
+  padding-bottom: 2px;
+}
+
+.third-screen__title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 63px;
+}
+
+@media (max-width: 991.98px) {
+  .third-screen {
+    padding-top: 33px;
+    padding-bottom: 22px;
+  }
+
+  .third-screen__title {
+    margin-bottom: 35px;
+  }
+
+  .third-screen__slider.slider-block.owl-carousel.owl-theme {
+    margin: 0;
+
+    .col-md-4 {
+      padding: 0;
+    }
+
+    .owl-item {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .owl-item img {
+      height: 80%;
+    }
+
+    .owl-dots {
+      margin-top: 0;
+    }
+  }
+}
