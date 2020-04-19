@@ -116,6 +116,7 @@
 @media (max-width: 991.98px) {
   .second-screen__contentBlock {
     margin-top: 50px;
+    padding-left: 60px;
   }
 
   .second-screen__img-arms {
@@ -126,6 +127,7 @@
 
   .second-screen__contentBlock-title {
     margin-bottom: 23px;
+    font-size: 26px;
   }
 
   .second-screen {
@@ -158,9 +160,10 @@
 
   .second-screen__contentBlock {
     margin-bottom: 300px;
+    padding-left: 15px;
   }
 
   .second-screen__img-arms {
-    right: 0;
+    right: -60px;
   }
 }

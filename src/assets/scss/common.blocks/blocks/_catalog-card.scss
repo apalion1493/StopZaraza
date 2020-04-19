@@ -186,4 +186,22 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .catalog-card__footer-quantity .form-group {
+    border-width: 1px;
+    height: 30px;
+  }
+
+  .catalog-card__main-price {
+    line-height: 19px;
+  }
+
+  .catalog-card__main-footer {
+    padding-bottom: 14px;
+  }
+
+  .catalog-card__btn {
+    margin-top: 5px;
+    height: 36px;
+  }
 }
