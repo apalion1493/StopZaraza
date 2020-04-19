@@ -1,6 +1,7 @@
 .fourth-screen {
   padding-top: 52px;
   padding-bottom: 87px;
+  overflow: hidden;
 
   .container {
     position: relative;
@@ -11,24 +12,27 @@
     position: relative;
   }
 
-  .container-circle-1 {
-    border-color: #FFFFFF;
-    width: 755px;
-    height: 755px;
-    top: 56%;
+  .container-circle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .container-circle-2 {
+  .container-circle__3,
+  .container-circle__2,
+  .container-circle__1 {
     border-color: #FFFFFF;
-    width: 520px;
-    height: 520px;
-  }
-
-  .container-circle-center {
     background: initial;
+  }
+
+  .container-circle__1 {
+    animation: pulse 2s infinite ease-in-out;
+    top: auto;
+    left: auto;
+    transform: initial;
     border: 1px solid #FFFFFF;
-    width: 335px;
-    height: 335px;
+    width: 450px;
+    height: 450px;
   }
 }
 
@@ -106,6 +110,10 @@
     .container-circle-1 {
       display: none;
     }
+
+    .container-circle {
+      display: none;
+    }
   }
 
   .fourth-screen__title-mb {
@@ -174,9 +182,32 @@
   .fourth-screen__image {
     max-width: 195px;
   }
+
+
 }
 
 @media (max-width: 767.98px) {
+  .fourth-screen {
+    .fourth-screen__container-circle {
+      display: flex;
+
+      .container-circle__3 {
+        width: 200px;
+        height: 200px;
+      }
+
+      .container-circle__2 {
+        width: 250px;
+        height: 250px;
+      }
+
+      .container-circle__1 {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+
   .fourth-screen_desktopHidden {
     display: block;
   }
@@ -206,10 +237,6 @@
       width: 100%;
     }
   }
-
-  //.fourth-screen__list .description-block {
-  //  width: 100%;
-  //}
 
   .fourth-screen__list .description-block .description-block__img {
     margin-right: 0;
@@ -263,6 +290,14 @@
     .third-screen__slider.slider-block.owl-carousel.owl-theme .owl-dots {
       margin-top: 30px;
     }
+  }
+
+  .fourth-screen__mobImg {
+    z-index: 10;
+    position: relative;
+    margin-top: 40px;
+    width: 104px;
+    height: 318px;
   }
 }
 
