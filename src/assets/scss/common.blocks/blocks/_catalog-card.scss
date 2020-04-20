@@ -67,7 +67,7 @@
     border: 2px solid $primary;
     height: 65px;
     border-radius: 10px;
-    padding: 15px 24px;
+    padding: 15px 15px;
   }
 }
 
@@ -88,12 +88,15 @@
   color: $primary;
   padding-left: 0;
   padding-right: 0;
+  width: 50px;
 
   &:hover,
   &:focus {
     border: none;
     outline: none;
     box-shadow: none;
+    //color: #000000;
+    background: rgba(0, 139, 239, .1);
   }
 }
 
