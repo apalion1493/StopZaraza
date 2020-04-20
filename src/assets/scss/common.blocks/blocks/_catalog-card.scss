@@ -162,10 +162,11 @@
     max-width: 100%;
   }
 
-  .catalog-card__footer-quantity .form-group {
-    height: 41px;
+  .catalog-card__footer-quantity .input-group {
+    height: 45px;
     padding-top: 0;
     padding-bottom: 0;
+    border-width: 1px;
   }
 
   .catalog-card__footer-quantity-form {
@@ -174,6 +175,7 @@
 
   .catalog-card__footer-quantity-btn {
     width: 60px;
+    font-size: 28px;
   }
 }
 
@@ -200,9 +202,15 @@
     margin-right: auto;
   }
 
-  .catalog-card__footer-quantity .form-group {
+  .catalog-card__footer-quantity .input-group {
     border-width: 1px;
-    height: 30px;
+    height: 35px;
+
+    .catalog-card__footer-quantity-btn {
+      font-size: 20px;
+      padding: 0;
+      line-height: normal;
+    }
   }
 
   .catalog-card__main-price {
