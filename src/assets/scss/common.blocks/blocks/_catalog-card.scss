@@ -60,14 +60,19 @@
   max-width: 120px;
   width: 100%;
 
-  .form-group {
+  .input-group {
     display: flex;
     align-items: center;
     margin-bottom: 0;
     border: 2px solid $primary;
     height: 65px;
     border-radius: 10px;
-    padding: 15px 5px;
+    padding: 0;
+  }
+
+  .input-group-prepend {
+    border: none !important;
+    height: 100%;
   }
 }
 
@@ -81,14 +86,15 @@
 
 .catalog-card__footer-quantity-btn {
   background: initial;
-  border: none;
-  outline: none;
+  border: none !important;
+  outline: none !important;
   font-size: 32px;
   line-height: 29px;
   color: $primary;
   padding-left: 0;
   padding-right: 0;
-  min-width: 30px;
+  min-width: 35px;
+  box-shadow: none;
 
   &:hover,
   &:focus {
@@ -164,6 +170,10 @@
 
   .catalog-card__footer-quantity-form {
     height: 100%;
+  }
+
+  .catalog-card__footer-quantity-btn {
+    width: 60px;
   }
 }
 
